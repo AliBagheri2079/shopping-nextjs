@@ -1,12 +1,32 @@
 {
   "name": "shopping-nextjs",
+  "homepage": "https://github.com/AliBagheri2079/shopping-nextjs/",
+  "title": "Elixir Online Shop",
+  "description": "Online Shopping Marketplace: Clothes, Shoes, Beauty, Electronics and More",
+  "keywords": [
+    "Elixir",
+    "Online Shop",
+    "Clothes",
+    "Shoes",
+    "Beauty",
+    "Electronics"
+  ],
+  "author": {
+    "name": "Ali Bagheri",
+    "email": "alibagheri2079.dev@gmail.com",
+    "url": "https://www.github.com/alibagheri2079"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint --fix",
+    "stylelint": "stylelint --fix src/**/*.css",
+    "prettier": "prettier --write src/**/*.{ts,tsx}",
     "prepare": "husky install"
   },
   "dependencies": {
