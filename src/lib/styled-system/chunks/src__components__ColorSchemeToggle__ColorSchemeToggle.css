@@ -1,0 +1,61 @@
+@layer utilities {
+  .mt_xl {
+    margin-top: xl
+    }
+
+  .text_blue {
+    color: blue
+    }
+
+  .text_cyan {
+    color: cyan
+    }
+
+  .text_dark {
+    color: dark
+    }
+
+  .text_grape {
+    color: grape
+    }
+
+  .text_gray {
+    color: gray
+    }
+
+  .text_green {
+    color: green
+    }
+
+  .text_indigo {
+    color: indigo
+    }
+
+  .text_lime {
+    color: lime
+    }
+
+  .text_orange {
+    color: orange
+    }
+
+  .text_pink {
+    color: pink
+    }
+
+  .text_red {
+    color: red
+    }
+
+  .text_teal {
+    color: teal
+    }
+
+  .text_violet {
+    color: violet
+    }
+
+  .text_yellow {
+    color: yellow
+    }
+}

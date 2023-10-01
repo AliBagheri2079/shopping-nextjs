@@ -19,6 +19,8 @@ module.exports = {
       },
     },
     'postcss-import': {},
+    '@pandacss/dev/postcss': {},
+    '@csstools/postcss-cascade-layers': {},
     ...(process.env.NODE_ENV === 'production'
       ? {
           autoprefixer: {},
