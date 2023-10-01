@@ -27,7 +27,7 @@
     "lint": "next lint --fix",
     "stylelint": "stylelint --fix src/**/*.css",
     "prettier": "prettier --write src/**/*.{ts,tsx}",
-    "prepare": "husky install"
+    "prepare": "husky install && panda codegen"
   },
   "dependencies": {
     "@mantine/carousel": "^7.0.2",
@@ -58,6 +58,8 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@csstools/postcss-cascade-layers": "^4.0.0",
+    "@pandacss/dev": "^0.15.4",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/node": "^20.7.0",
     "@types/react": "^18.2.23",
@@ -70,7 +72,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
-    "postcss": "^8.4.30",
+    "postcss": "^8.4.31",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^9.1.4",
     "postcss-preset-mantine": "^1.7.0",
