@@ -1,7 +1,7 @@
 import { ColorSchemeScript } from '@mantine/core';
 import type { FC, ReactNode } from 'react';
 
-import Styles from './layout.module.css';
+import './global.css';
 import { montserrat, sahel } from '@/assets/fonts';
 import Containers from '@/containers';
 import { layoutMetadata } from '@/lib/utils';
@@ -15,6 +15,7 @@ type Props = {
 /*
   TODO: REMOVE REACT ICONS PACKAGE AND USE JUST TABLER ICONS
   TODO: COMPLETE LAYOUT METADATA URLS
+  TODO: REMOVE ALL STYLELINT RULES AFTER THIRD OPTION
 */
 const RootLayout: FC<Props> = ({ children }) => {
   return (
@@ -26,7 +27,7 @@ const RootLayout: FC<Props> = ({ children }) => {
       <head>
         <ColorSchemeScript defaultColorScheme='auto' />
       </head>
-      <body className={Styles.Wrapper}>
+      <body>
         <Containers>{children}</Containers>
       </body>
     </html>

@@ -1,7 +1,0 @@
-.Wrapper {
-  font-family: var(--font-montserrat);
-
-  @mixin rtl {
-    font-family: var(--font-sahel);
-  }
-}
