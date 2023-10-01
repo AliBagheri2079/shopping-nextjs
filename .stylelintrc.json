@@ -10,7 +10,9 @@
     "max-nesting-depth": 2,
     "selector-max-id": 1,
     "selector-class-pattern": null,
-    "media-query-no-invalid": null
+    "media-query-no-invalid": null,
+    "custom-property-pattern": null,
+    "no-duplicate-selectors": null
   },
   "overrides": [],
   "reportNeedlessDisables": true,
