@@ -28,7 +28,7 @@ const themeOverride = createTheme({
     yellow: generateColors('#efff09'),
   },
   primaryShade: { light: 5, dark: 8 },
-  primaryColor: 'indigo',
+  primaryColor: 'blue',
   // fontFamily: '',
   // fontFamilyMonospace: '',
   // radius: {},
