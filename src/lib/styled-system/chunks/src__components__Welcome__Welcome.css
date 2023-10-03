@@ -1,0 +1,13 @@
+@layer utilities {
+  .mt_100 {
+    margin-top: 100px
+    }
+
+  .mx_auto {
+    margin-inline: auto
+    }
+
+  .mt_xl {
+    margin-top: xl
+    }
+}

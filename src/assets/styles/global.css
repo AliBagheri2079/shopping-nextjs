@@ -1,0 +1,13 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@layer base {
+  body {
+    --mantine-font-family: var(--font-montserrat);
+    --mantine-font-family-headings: var(--font-montserrat);
+
+    @mixin rtl {
+      --mantine-font-family: var(--font-sahel);
+      --mantine-font-family-headings: var(--font-sahel);
+    }
+  }
+}
