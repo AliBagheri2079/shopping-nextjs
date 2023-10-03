@@ -44,6 +44,8 @@
     "@mantine/spotlight": "^7.0.2",
     "@mantine/tiptap": "^7.0.2",
     "@next/bundle-analyzer": "^13.5.3",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.460",
     "@tabler/icons-react": "^2.35.0",
     "@tiptap/extension-link": "^2.1.11",
     "@tiptap/react": "^2.1.11",

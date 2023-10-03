@@ -12,7 +12,8 @@
     "selector-class-pattern": null,
     "media-query-no-invalid": null,
     "custom-property-pattern": null,
-    "no-duplicate-selectors": null
+    "no-duplicate-selectors": null,
+    "function-no-unknown": null
   },
   "overrides": [],
   "reportNeedlessDisables": true,
