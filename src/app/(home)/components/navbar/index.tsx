@@ -2,12 +2,12 @@ import { Button, Container, Group, Text, Title } from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Styles from './index.module.css';
+import classes from './index.module.css';
 import Logo from '@/assets/images/logo.png';
 
 const Navbar = () => {
   return (
-    <nav className={Styles.Wrapper}>
+    <nav className={classes.navbar}>
       <Container size='xl'>
         <Group justify='space-between' h='100%'>
           <Group gap='xs'>
@@ -33,12 +33,7 @@ const Navbar = () => {
             >
               Login
             </Button>
-            <Button
-              component={Link}
-              href='/signup'
-              color='blue'
-              tt='capitalize'
-            >
+            <Button component={Link} href='/signup' tt='capitalize'>
               Signup
             </Button>
           </Group>
