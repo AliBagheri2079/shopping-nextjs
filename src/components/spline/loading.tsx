@@ -1,23 +1,13 @@
-import { TbLoader } from 'react-icons/tb';
-
-import { css } from '@/lib/styled-system/css';
-import { stack } from '@/lib/styled-system/patterns';
+import { Center, Loader, Text } from '@mantine/core';
 
 const Loading = () => {
   return (
-    <div
-      className={stack({
-        direction: 'row',
-        align: 'center',
-        justify: 'center',
-        minH: 'svh',
-      })}
-    >
-      <TbLoader size={25} />
-      <span className={css({ fontSize: 'sm', color: 'gray.500' })}>
+    <Center h='100dvh'>
+      <Loader size='sm' type='dots' mr='sm' />
+      <Text size='sm' c='gray.500'>
         Processing...
-      </span>
-    </div>
+      </Text>
+    </Center>
   );
 };
 
