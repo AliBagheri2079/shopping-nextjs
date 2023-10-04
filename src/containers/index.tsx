@@ -1,9 +1,10 @@
 import { DirectionProvider, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
-import type { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 import { colorSchemeManager, theme } from './plugins';
+import '@/assets/styles/global.css';
 
 type Props = {
   children: ReactNode;
