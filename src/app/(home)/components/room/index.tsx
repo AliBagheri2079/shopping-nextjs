@@ -5,7 +5,7 @@ import { URL } from '@/lib/utils';
 const Room = () => {
   return (
     <section className={classes.wrapper}>
-      <Spline scene={URL.SPLINE.ROOM} className={classes.room} />
+      <Spline scene={URL.SPLINE.ROOM} />
     </section>
   );
 };
