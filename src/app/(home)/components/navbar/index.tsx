@@ -1,9 +1,8 @@
-import { Button, Container, Group, Text, Title } from '@mantine/core';
-import Image from 'next/image';
+import { Button, Container, Group, Title } from '@mantine/core';
 import Link from 'next/link';
 
 import classes from './index.module.css';
-import Logo from '@/assets/images/logo.png';
+import { BrandLogo, BrandTitle } from '@/components/brand';
 
 const Navbar = () => {
   return (
@@ -11,32 +10,18 @@ const Navbar = () => {
       <Container size='xl'>
         <Group justify='space-between' h='100%'>
           <Group gap='xs'>
-            <Image src={Logo} alt='elixir favicon' width={35} height={35} />
+            <BrandLogo width={40} height={40} />
 
-            <Title order={2} tt='capitalize'>
-              <Text span size='xl' c='dark.4'>
-                El
-              </Text>
-              <Text span size='xl' c='blue' fw={700}>
-                ixir
-              </Text>
+            <Title order={2}>
+              <BrandTitle size='xl' />
             </Title>
           </Group>
 
-          <Group gap={6}>
-            <Button
-              component={Link}
-              href='/login'
-              variant='transparent'
-              color='dark.4'
-              tt='capitalize'
-            >
-              Login
+          <div>
+            <Button component={Link} href='/register' tt='capitalize'>
+              register
             </Button>
-            <Button component={Link} href='/signup' tt='capitalize'>
-              Signup
-            </Button>
-          </Group>
+          </div>
         </Group>
       </Container>
     </nav>
