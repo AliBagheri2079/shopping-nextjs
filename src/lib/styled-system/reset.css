@@ -1,37 +1,37 @@
 @layer reset {
   * {
-    font: inherit;
     margin: 0;
     padding: 0;
+    font: inherit;
   }
 
   *,
   *::before,
   *::after {
-    border-color: var(--global-color-border, currentColor);
-    border-style: solid;
-    border-width: 0;
     box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--global-color-border, currentColor);
   }
 
   html {
-    --font-fallback: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
-      'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    line-height: 1.5;
+    --font-fallback: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji';
-
-    font-family: var(--global-font-body, var(--font-fallback));
+    -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.5;
+    -moz-tab-size: 4;
     tab-size: 4;
-    tab-size: 4;
-    text-size-adjust: 100%;
+    font-family: var(--global-font-body, var(--font-fallback));
   }
 
   hr {
-    border-top-width: 1px;
-    color: inherit;
     height: 0;
+    color: inherit;
+    border-top-width: 1px;
   }
 
   body {
@@ -57,8 +57,8 @@
 
   img,
   video {
-    height: auto;
     max-width: 100%;
+    height: auto;
   }
 
   p,
@@ -87,7 +87,7 @@
   [type='button'],
   [type='reset'],
   [type='submit'] {
-    appearance: button;
+    -webkit-appearance: button;
     background-color: transparent;
     background-image: none;
   }
@@ -98,15 +98,15 @@
   }
 
   table {
-    border-collapse: collapse;
-    border-color: inherit;
     text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
   }
 
   input::placeholder,
   textarea::placeholder {
-    color: var(--global-color-placeholder, #9ca3af);
     opacity: 1;
+    color: var(--global-color-placeholder, #9ca3af);
   }
 
   textarea {
@@ -159,43 +159,42 @@
   kbd,
   samp,
   pre {
-    --font-mono-fallback: ui-monospace, sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New';
-
-    font-family: var(--global-font-mono, var(--font-fallback));
     font-size: 1em;
+    --font-mono-fallback: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      'Liberation Mono', 'Courier New';
+    font-family: var(--global-font-mono, var(--font-fallback));
   }
 
-
-  input[type="text"],
-  input[type="email"],
-  input[type="search"],
-  input[type="password"] {
-    appearance: none;
-    appearance: none; 
+  input[type='text'],
+  input[type='email'],
+  input[type='search'],
+  input[type='password'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
   input[type='search'] {
-    appearance: textfield;
+    -webkit-appearance: textfield;
     outline-offset: -2px;
   }
 
   ::-webkit-search-decoration,
   ::-webkit-search-cancel-button {
-    appearance: none;
+    -webkit-appearance: none;
   }
 
   ::-webkit-file-upload-button {
-    appearance: button;
+    -webkit-appearance: button;
     font: inherit;
   }
 
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
     height: auto;
   }
 
-  input[type='number']{
-    appearance: textfield;
+  input[type='number'] {
+    -moz-appearance: textfield;
   }
 
   :-moz-ui-invalid {
