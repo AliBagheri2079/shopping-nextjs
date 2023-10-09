@@ -17,6 +17,9 @@ export default function SignUpPage() {
       <SignUp
         redirectUrl='/dashboard'
         appearance={{
+          variables: {
+            colorBackground: '#b2afe5',
+          },
           elements: {
             card: {
               width: '35rem',

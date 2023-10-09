@@ -12,7 +12,7 @@ const AuthProvider: FC<Props> = ({ children }) => {
   return (
     <ClerkProvider
       appearance={{
-        baseTheme: dark,
+        // baseTheme: dark,
         variables: {
           colorPrimary: '#1f32c4',
           fontFamily: 'var(--mantine-font-family)',

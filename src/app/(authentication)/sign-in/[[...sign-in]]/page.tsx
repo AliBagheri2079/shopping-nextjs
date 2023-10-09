@@ -16,6 +16,9 @@ export default function SignInPage() {
     <Flex align='center' justify='center' mih='100dvh'>
       <SignIn
         appearance={{
+          variables: {
+            colorBackground: '#b2afe5',
+          },
           elements: {
             card: {
               width: '35rem',
