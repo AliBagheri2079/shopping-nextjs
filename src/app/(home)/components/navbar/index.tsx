@@ -1,3 +1,4 @@
+import { SignInButton, SignUpButton } from '@clerk/nextjs';
 import { Button, Container, Group, Title } from '@mantine/core';
 import Link from 'next/link';
 
@@ -17,11 +18,34 @@ const Navbar = () => {
             </Title>
           </Group>
 
-          <div>
-            <Button component={Link} href='/register' tt='capitalize'>
-              register
+          <Group gap={4}>
+            <SignInButton>
+              <Button variant='transparent' color='dark.4' tt='capitalize'>
+                sign in
+              </Button>
+            </SignInButton>
+            <SignUpButton>
+              <Button tt='capitalize'>sign up</Button>
+            </SignUpButton>
+            {/* 
+            <Button
+              component={Link}
+              href='/register?type=login'
+              variant='transparent'
+              color='dark.4'
+              tt='capitalize'
+            >
+              login
             </Button>
-          </div>
+            <Button
+              component={Link}
+              href='/register?type=signup'
+              tt='capitalize'
+            >
+              signup
+            </Button> 
+            */}
+          </Group>
         </Group>
       </Container>
     </nav>
