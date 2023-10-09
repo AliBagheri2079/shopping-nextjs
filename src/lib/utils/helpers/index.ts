@@ -1,2 +1,4 @@
 export * from './metadata';
-export * from './randomId';
+export * from './random-id';
+export * from './supabase';
+export * from './auth-options';
