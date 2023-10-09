@@ -9,7 +9,7 @@ const GithubIcon: FC<Props> = ({ size = 18, ...others }) => {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 46 46'
-      fill='gray'
+      fill='#f5f5f5'
       width={size}
       height={size}
       {...others}
