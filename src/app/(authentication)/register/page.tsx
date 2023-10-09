@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 
-import { RegisterWithAccounts, RegisterWithForm } from './components';
+import {
+  RegisterUserWithNextAuth,
+  RegisterUserWithSupabase,
+} from './components';
 
 export const metadata: Metadata = {
   title: 'Register Page | Elixir Online Shop',
@@ -9,8 +12,8 @@ export const metadata: Metadata = {
 const RegisterPage = () => {
   return (
     <>
-      <RegisterWithForm />
-      <RegisterWithAccounts />
+      <RegisterUserWithNextAuth />
+      <RegisterUserWithSupabase />
     </>
   );
 };

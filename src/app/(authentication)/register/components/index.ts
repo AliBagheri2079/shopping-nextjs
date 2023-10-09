@@ -1,2 +1,2 @@
-export { default as RegisterWithForm } from './form';
-export { default as RegisterWithAccounts } from './accounts';
+export { default as RegisterUserWithNextAuth } from './register-user';
+export { default as RegisterUserWithSupabase } from './register-user2';
