@@ -30,6 +30,9 @@
     "prepare": "husky install && panda codegen"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.25.3",
+    "@clerk/themes": "^1.7.7",
+    "@hookform/resolvers": "^3.3.1",
     "@mantine/carousel": "^7.0.2",
     "@mantine/code-highlight": "^7.0.2",
     "@mantine/colors-generator": "^7.1.0",
@@ -46,6 +49,7 @@
     "@next/bundle-analyzer": "^13.5.3",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.460",
+    "@supabase/supabase-js": "^2.38.0",
     "@tabler/icons-react": "^2.35.0",
     "@tiptap/extension-link": "^2.1.11",
     "@tiptap/react": "^2.1.11",
@@ -54,13 +58,18 @@
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "embla-carousel-react": "^7.1.0",
+    "moment": "^2.29.4",
     "next": "^13.5.3",
+    "next-auth": "^4.23.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.11.0"
+    "react-hook-form": "^7.47.0",
+    "react-icons": "^4.11.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@csstools/postcss-cascade-layers": "^4.0.0",
+    "@hookform/devtools": "^4.3.1",
     "@pandacss/dev": "^0.15.4",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/node": "^20.7.0",
