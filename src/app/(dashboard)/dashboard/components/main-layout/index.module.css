@@ -1,0 +1,14 @@
+.contentPosition {
+  inset-inline: 0;
+  position: absolute;
+}
+
+.navbarPosition {
+  inset: auto 0 0;
+  position: fixed;
+}
+
+.glassmorphism {
+  backdrop-filter: blur(1.15rem);
+  transition: all 300ms linear;
+}
