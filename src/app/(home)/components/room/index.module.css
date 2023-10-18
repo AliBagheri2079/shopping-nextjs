@@ -1,8 +1,4 @@
-.Wrapper {
+.wrapper {
   inset: 0;
   position: absolute;
-}
-
-.Object {
-  cursor: grab;
 }

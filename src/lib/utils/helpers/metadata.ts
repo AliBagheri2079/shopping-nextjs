@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-export const layoutMetadata: Metadata = {
+export const layout_metadata: Metadata = {
   title: 'Elixir Online Shop',
   description:
     'Online Shopping Marketplace: Clothes, Shoes, Beauty, Electronics and More',

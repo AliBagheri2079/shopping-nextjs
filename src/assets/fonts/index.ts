@@ -1,2 +1,2 @@
-export * from './montserrat';
+export * from './poppins';
 export * from './sahel';

@@ -1,9 +1,11 @@
-import { DirectionProvider, MantineProvider } from '@mantine/core';
-import '@mantine/core/styles.css';
-import '@mantine/dates/styles.css';
-import type { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
-import { colorSchemeManager, theme } from './plugins';
+import '@/assets/styles/global.css';
+import {
+  AuthProvider,
+  AuthProvider2,
+  MantineProvider,
+} from '@/context/providers';
 
 type Props = {
   children: ReactNode;
@@ -11,17 +13,11 @@ type Props = {
 
 const Containers: FC<Props> = ({ children }) => {
   return (
-    <DirectionProvider>
-      <MantineProvider
-        theme={theme}
-        colorSchemeManager={colorSchemeManager}
-        defaultColorScheme='auto'
-        // withCssVariables={false}
-        // classNamesPrefix="app"
-      >
-        {children}
-      </MantineProvider>
-    </DirectionProvider>
+    <MantineProvider>
+      <AuthProvider>
+        <AuthProvider2>{children}</AuthProvider2>
+      </AuthProvider>
+    </MantineProvider>
   );
 };
 

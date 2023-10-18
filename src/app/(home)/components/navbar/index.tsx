@@ -1,46 +1,50 @@
-import { Button, Container, Group, Text, Title } from '@mantine/core';
-import Image from 'next/image';
+import { SignInButton, SignUpButton } from '@clerk/nextjs';
+import { Button, Container, Group, Title } from '@mantine/core';
 import Link from 'next/link';
 
-import Styles from './index.module.css';
-import Logo from '@/assets/images/logo.png';
+import classes from './index.module.css';
+import { BrandLogo, BrandTitle } from '@/components/brand';
 
 const Navbar = () => {
   return (
-    <nav className={Styles.Wrapper}>
+    <nav className={classes.navbar}>
       <Container size='xl'>
         <Group justify='space-between' h='100%'>
           <Group gap='xs'>
-            <Image src={Logo} alt='elixir favicon' width={35} height={35} />
+            <BrandLogo width={40} height={40} />
 
-            <Title order={2} tt='capitalize'>
-              <Text span size='xl' c='dark.4'>
-                El
-              </Text>
-              <Text span size='xl' c='blue' fw={700}>
-                ixir
-              </Text>
+            <Title order={2}>
+              <BrandTitle size='xl' />
             </Title>
           </Group>
 
-          <Group gap={6}>
+          <Group gap={4}>
+            <SignInButton>
+              <Button variant='transparent' color='dark.4' tt='capitalize'>
+                sign in
+              </Button>
+            </SignInButton>
+            <SignUpButton>
+              <Button tt='capitalize'>sign up</Button>
+            </SignUpButton>
+            {/* 
             <Button
               component={Link}
-              href='/login'
+              href='/register?type=login'
               variant='transparent'
               color='dark.4'
               tt='capitalize'
             >
-              Login
+              login
             </Button>
             <Button
               component={Link}
-              href='/signup'
-              color='blue'
+              href='/register?type=signup'
               tt='capitalize'
             >
-              Signup
-            </Button>
+              signup
+            </Button> 
+            */}
           </Group>
         </Group>
       </Container>
