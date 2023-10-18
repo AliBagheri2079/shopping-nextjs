@@ -1,0 +1,187 @@
+/** Root Container */
+.container {
+  --default-shadow-color: rgb(0 0 0 / 25%);
+  --transition: 400ms cubic-bezier(0, -0.02, 0.4, 1.25);
+
+  font-size: rem(9.5px);
+}
+
+/** Icons Container */
+.icons {
+  --icons-width: 5.625em;
+  --icons-height: 2.5em;
+
+  background: light-dark(
+    var(--mantine-color-blue-4),
+    var(--mantine-color-dark-6)
+  );
+  border-radius: var(--mantine-radius-xl);
+  box-shadow:
+    0 -0.062em 0.062em var(--default-shadow-color),
+    0 0.062em 0.125em rgb(255 255 255 / 94%);
+  cursor: pointer;
+  height: var(--icons-height);
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition);
+  width: var(--icons-width);
+
+  &::before {
+    border-radius: var(--mantine-radius-xl);
+    box-shadow:
+      0 0.05em 0.187em var(--default-shadow-color) inset,
+      0 0.05em 0.187em var(--default-shadow-color) inset;
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+/** Cloud Container */
+.icons__cloud {
+  --clouds-color: #f3fdff;
+  --back-clouds-color: #aacadf;
+
+  background-color: var(--clouds-color);
+  border-radius: var(--mantine-radius-xl);
+  bottom: -0.625em;
+  box-shadow:
+    0.937em 0.312em var(--clouds-color),
+    -0.312em -0.312em var(--back-clouds-color),
+    1.437em 0.375em var(--clouds-color),
+    0.5em -0.125em var(--back-clouds-color),
+    2.187em 0 var(--clouds-color),
+    1.25em -0.062em var(--back-clouds-color),
+    2.937em 0.312em var(--clouds-color),
+    2em -0.312em var(--back-clouds-color),
+    3.625em -0.062em var(--clouds-color),
+    2.625em 0 var(--back-clouds-color),
+    4.5em -0.312em var(--clouds-color),
+    3.375em -0.437em var(--back-clouds-color),
+    4.625em -1.75em 0 0.437em var(--clouds-color),
+    4em -0.625em var(--back-clouds-color),
+    4.125em -2.125em 0 0.437em var(--back-clouds-color);
+  height: 1.25em;
+  left: 0.312em;
+  position: absolute;
+  transition: var(--transition);
+  width: 1.25em;
+
+  @mixin dark {
+    bottom: -4.062em;
+  }
+}
+
+/** Star Container */
+.icons__star {
+  color: var(--mantine-color-white);
+  height: auto;
+  left: 0.312em;
+  position: absolute;
+  top: -100%;
+  transition: var(--transition);
+  width: 3.75em;
+
+  @mixin dark {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/** Circle Container */
+.icons__circle {
+  --circle-background: rgb(255 255 255 / 10%);
+  --circle-diameter: 2.05em;
+  --circle-offset: calc(
+    (var(--circle-diameter) - var(--icons-height)) / 2 * -1
+  );
+  --circle-transition: 300ms cubic-bezier(0, -0.02, 0.35, 1.17);
+
+  background-color: var(--circle-background);
+  border-radius: var(--mantine-radius-xl);
+  box-shadow:
+    inset 0 0 0 3.375em var(--circle-background),
+    inset 0 0 0 3.375em var(--circle-background),
+    0 0 0 0.625em var(--circle-background),
+    0 0 0 1.25em var(--circle-background);
+  display: flex;
+  height: var(--circle-diameter);
+  left: var(--circle-offset);
+  pointer-events: none;
+  position: absolute;
+  top: var(--circle-offset);
+  transition: var(--circle-transition);
+  width: var(--circle-diameter);
+
+  @mixin dark {
+    left: calc(100% - var(--circle-offset) - var(--circle-diameter));
+  }
+}
+
+/** Moon Icon Container */
+.moon__wrapper {
+  --moon-diameter: 2.025em;
+
+  background-color: var(--mantine-color-lime-4);
+  border-radius: var(--mantine-radius-xl);
+  box-shadow:
+    0.062em 0.062em 0.062em 0 rgb(254 255 239 / 61%) inset,
+    0 -0.062em 0.062em 0 var(--mantine-color-yellow-9) inset;
+  filter: drop-shadow(0.062em 0.125em 0.125em var(--default-shadow-color))
+    drop-shadow(0 0.062em 0.125em var(--default-shadow-color));
+  height: var(--moon-diameter);
+  margin: auto;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+  transition: var(--transition);
+  width: var(--moon-diameter);
+  z-index: 2;
+}
+
+.moon {
+  background-color: var(--mantine-color-gray-2);
+  border-radius: inherit;
+  box-shadow:
+    0.062em 0.062em 0.062em 0 rgb(254 255 239 / 61%) inset,
+    0 -0.062em 0.062em 0 #969696 inset;
+  height: 100%;
+  position: relative;
+  transform: translateX(100%);
+  transition: var(--transition);
+  width: 100%;
+
+  @mixin dark {
+    transform: translate(0);
+  }
+}
+
+/** Moon Icon Spots */
+.moon__spot {
+  background-color: var(--mantine-color-dark-3);
+  border-radius: var(--mantine-radius-xl);
+  box-shadow: 0 0.0312em 0.062em var(--default-shadow-color) inset;
+  position: absolute;
+
+  &:first-of-type {
+    height: 0.325em;
+    left: 0.812em;
+    top: 0.325em;
+    width: 0.325em;
+  }
+
+  &:nth-of-type(2) {
+    height: 0.4em;
+    left: 1.4em;
+    top: 0.937em;
+    width: 0.4em;
+  }
+
+  &:last-of-type {
+    height: 0.425em;
+    left: 0.425em;
+    top: 0.99em;
+    width: 0.425em;
+  }
+}
