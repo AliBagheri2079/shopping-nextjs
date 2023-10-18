@@ -2,8 +2,13 @@
 
 @layer base {
   body {
-    --mantine-font-family: var(--font-montserrat);
-    --mantine-font-family-headings: var(--font-montserrat);
+    --mantine-color-body: rgba(255 255 255 / 30%);
+    --mantine-font-family: var(--font-poppins);
+    --mantine-font-family-headings: var(--font-poppins);
+
+    @mixin dark {
+      --mantine-color-body: rgba(16 18 27 / 40%);
+    }
 
     @mixin rtl {
       --mantine-font-family: var(--font-sahel);
