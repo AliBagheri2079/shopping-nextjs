@@ -1,7 +1,11 @@
 import { FC, ReactNode } from 'react';
 
 import '@/assets/styles/global.css';
-import { AuthProvider, AuthProvider2, UiProvider } from '@/context/providers';
+import {
+  AuthProvider,
+  AuthProvider2,
+  MantineProvider,
+} from '@/context/providers';
 
 type Props = {
   children: ReactNode;
@@ -9,11 +13,11 @@ type Props = {
 
 const Containers: FC<Props> = ({ children }) => {
   return (
-    <UiProvider>
+    <MantineProvider>
       <AuthProvider>
         <AuthProvider2>{children}</AuthProvider2>
       </AuthProvider>
-    </UiProvider>
+    </MantineProvider>
   );
 };
 

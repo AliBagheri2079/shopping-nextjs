@@ -1,3 +1,3 @@
-export { default as UiProvider } from './ui';
-export { default as AuthProvider2 } from './auth';
-export { default as AuthProvider } from './clerk';
+export { default as MantineProvider } from './mantine';
+export { default as AuthProvider } from './auth';
+export { default as AuthProvider2 } from './auth2';
