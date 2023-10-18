@@ -1,7 +1,7 @@
 import { Button, Group } from '@mantine/core';
 import { signIn } from 'next-auth/react';
 
-import { GithubIcon, GoogleIcon } from '@/components/icons';
+import { GithubIcon, GoogleIcon } from '@/components';
 import { randomId } from '@/lib/utils';
 
 const items = [
