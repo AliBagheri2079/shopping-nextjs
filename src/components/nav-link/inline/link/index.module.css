@@ -1,0 +1,10 @@
+.inlineLink {
+  border-radius: 100vmax;
+  height: 100%;
+  width: inherit;
+}
+
+.linkIcon {
+  height: 50%;
+  width: 50%;
+}
