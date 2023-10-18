@@ -1,20 +1,9 @@
 import { useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 
-type SizeList = {
-  xs?: boolean;
-  sm?: boolean;
-  md?: boolean;
-  lg?: boolean;
-  xl?: boolean;
-};
+import { MatcheSize } from '@/types';
 
-type MatchesSize = {
-  largerThan: SizeList;
-  smallerThan: SizeList;
-};
-
-export const useMatcheSize = (): MatchesSize => {
+export const useMatcheSize = (): MatcheSize => {
   const { breakpoints } = useMantineTheme();
 
   const largerThanXs = useMediaQuery(`(min-width: ${breakpoints.xs})`);
