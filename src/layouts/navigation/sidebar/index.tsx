@@ -12,27 +12,24 @@ export const Sidebar = () => {
 
   const content = Object.entries(categorizedCollections).map(
     ([category, items]) => {
-      const rootId = randomId();
+      const id = randomId();
       return (
-        <Stack key={rootId} justify='space-between' gap='xs'>
+        <Stack key={`root-navlink-${id}`} justify='space-between' gap='xs'>
           <GroupCategory category={category} />
 
           <List listStyleType='none'>
-            {items.map(item => {
-              const itemId = randomId();
-              return (
-                <List.Item
-                  key={itemId}
-                  styles={{
-                    itemWrapper: {
-                      display: 'revert',
-                    },
-                  }}
-                >
-                  <GroupNavLink {...item} />
-                </List.Item>
-              );
-            })}
+            {items.map(item => (
+              <List.Item
+                key={`list-navlink-${id}`}
+                styles={{
+                  itemWrapper: {
+                    display: 'revert',
+                  },
+                }}
+              >
+                <GroupNavLink {...item} />
+              </List.Item>
+            ))}
           </List>
         </Stack>
       );
