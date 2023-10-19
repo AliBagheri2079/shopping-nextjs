@@ -1,2 +1,2 @@
-export * from './dock';
+export * from './mac-dock';
 export * from './sidebar';

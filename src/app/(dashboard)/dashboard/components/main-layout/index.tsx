@@ -3,7 +3,7 @@ import cx from 'clsx';
 import { FC, ReactNode } from 'react';
 
 import classes from './index.module.css';
-import { Dock } from '@/layouts';
+import { MacDock } from '@/layouts';
 import { SIZE } from '@/lib/utils';
 
 type Props = {
@@ -26,7 +26,7 @@ const MainLayout: FC<Props> = ({ children }) => (
       mb='xs'
       hiddenFrom='md'
     >
-      <Dock />
+      <MacDock />
     </Paper>
   </Container>
 );

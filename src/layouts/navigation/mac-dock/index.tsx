@@ -6,7 +6,7 @@ import { collections } from '../collections';
 import { DockItem } from './item';
 import { randomId } from '@/lib/utils';
 
-export const Dock = () => {
+export const MacDock = () => {
   const mouseX = useMotionValue(Infinity);
 
   const content = collections.map(item => {
