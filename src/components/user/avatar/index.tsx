@@ -3,6 +3,8 @@
 import { UserButton } from '@clerk/nextjs';
 import { useMantineTheme } from '@mantine/core';
 
+import { GLASS_MORPHISM } from '@/lib/utils';
+
 export const UserAvatar = () => {
   const { primaryColor } = useMantineTheme();
 
@@ -19,8 +21,7 @@ export const UserAvatar = () => {
           card: {
             // TODO: add on auth provider
             color: 'var(--mantine-color-text)',
-            backgroundColor: 'var(--mantine-color-body)',
-            backdropFilter: 'blur(1.15rem)',
+            ...GLASS_MORPHISM,
           },
           userPreviewMainIdentifier: {
             color: 'inherit',

@@ -21,7 +21,9 @@ export const InlineNavLink: FC<Props> = ({ label, href, icon }) => {
       href={href}
       variant='outline'
       color={pathname === href ? primaryColor : 'var(--mantine-color-text)'}
-      className={cx(classes.inlineLink)}
+      classNames={{
+        root: cx(classes.inlineLink),
+      }}
       aria-label={label}
     >
       {createElement(icon, {
