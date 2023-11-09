@@ -1,3 +1,4 @@
+export * from './Children';
 export * from './Color';
 export * from './Icon';
 export * from './Language';

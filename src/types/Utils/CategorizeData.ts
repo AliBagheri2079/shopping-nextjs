@@ -1,3 +1,3 @@
 export type Category = string | number;
 
-export type CategorizedData<T> = Record<Category, T[]>;
+export type CategorizeData<T> = Record<Category, T[]>;
