@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "e39d390a-02b3-457c-9d9b-2e339419fcf5",
+		"name": "FakeStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17158902",
+		"_collection_link": "https://personal-office.postman.co/workspace/Team-Workspace~c6d409fa-a1aa-40a3-8e4c-27a8cfb1125d/collection/17158902-e39d390a-02b3-457c-9d9b-2e339419fcf5?action=share&source=collection_link&creator=17158902"
+	},
+	"item": [
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products?limit=20&sort=asc",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20",
+							"description": "number value"
+						},
+						{
+							"key": "sort",
+							"value": "asc",
+							"description": "Default value is in ascending mode, you can use with 'desc' or 'asc' as you want. "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSingleProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " You can also use limit(Number) and sort(asc|desc) as a query string to get your ideal results "
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products/1",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/categories",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCategoryProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " You can also use limit(Number) and sort(asc|desc) as a query string to get your ideal results "
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products/category/jewelery?limit=2&sort=asc",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"category",
+						"jewelery"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"description": "number value"
+						},
+						{
+							"key": "sort",
+							"value": "asc",
+							"description": "Default value is in ascending mode, you can use with 'desc' or 'asc' as you want. "
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
