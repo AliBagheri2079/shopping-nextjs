@@ -1,12 +1,9 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 import { Header, MainLayout, MiddleLayout, Wallpaper } from './components';
+import { Children } from '@/types';
 
-type Props = {
-  children: ReactNode;
-};
-
-const DashboardLayout: FC<Props> = ({ children }) => (
+const DashboardLayout: FC<Children> = ({ children }) => (
   <>
     <Wallpaper />
     <MainLayout>
