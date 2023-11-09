@@ -1,13 +1,10 @@
 import { Group, Paper, Stack, Text, Title } from '@mantine/core';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 import { BrandLogo, BrandTitle } from '@/components/brand';
+import { Children } from '@/types';
 
-type Props = {
-  children: ReactNode;
-};
-
-const RegisterLayout: FC<Props> = ({ children }) => {
+const RegisterLayout: FC<Children> = ({ children }) => {
   return (
     <Group align='center' justify='center' h='100dvh' grow>
       <Paper shadow='xl' p='xl' maw='32rem'>

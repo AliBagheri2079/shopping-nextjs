@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'SignUp Page | Elixir Online Shop',
 };
 
-export default function SignUpPage() {
+const SignUpPage = () => {
   const { userId } = auth();
 
   if (userId) redirect('/dashboard');
@@ -29,4 +29,6 @@ export default function SignUpPage() {
       />
     </Flex>
   );
-}
+};
+
+export default SignUpPage;
