@@ -4,7 +4,7 @@ import {
   ColorSchemeToggle,
   ColorSwatches,
   LanguageMenu,
-  ShoppingLink,
+  ShoppingListMenu,
   UserAvatar,
 } from '@/components';
 import { SIZE } from '@/lib/utils';
@@ -25,7 +25,7 @@ const Header = () => (
         <Group gap='sm'>
           <ColorSchemeToggle />
           <LanguageMenu />
-          <ShoppingLink />
+          <ShoppingListMenu />
           <UserAvatar />
         </Group>
       </Group>

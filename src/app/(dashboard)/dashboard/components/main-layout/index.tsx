@@ -1,32 +1,33 @@
 import { Container, Paper } from '@mantine/core';
 import cx from 'clsx';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 import classes from './index.module.css';
-import { Dock } from '@/layouts';
+import { MacDock } from '@/layouts';
 import { SIZE } from '@/lib/utils';
+import { Children } from '@/types';
 
-type Props = {
-  children: ReactNode;
-};
-
-const MainLayout: FC<Props> = ({ children }) => (
+const MainLayout: FC<Children> = ({ children }) => (
   <Container pos='relative' size='xl' h={SIZE.MAX_HEIGHT}>
     <Paper
-      className={cx(classes.contentPosition, classes.glassmorphism)}
       mx='md'
       my={{ base: 'md', md: SIZE.MAIN_LAYOUT_BLOCK_MARGIN }}
+      classNames={{
+        root: cx(classes.contentPosition, classes.defaultStyle),
+      }}
     >
       {children}
     </Paper>
 
     <Paper
-      className={cx(classes.navbarPosition, classes.glassmorphism)}
       mx='xl'
       mb='xs'
+      classNames={{
+        root: cx(classes.navbarPosition, classes.defaultStyle),
+      }}
       hiddenFrom='md'
     >
-      <Dock />
+      <MacDock />
     </Paper>
   </Container>
 );

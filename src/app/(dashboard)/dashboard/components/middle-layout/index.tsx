@@ -1,18 +1,15 @@
 import { Box, Flex, ScrollArea } from '@mantine/core';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 import { Sidebar } from '@/layouts';
 import { SIZE } from '@/lib/utils';
-
-type Props = {
-  children: ReactNode;
-};
+import { Children } from '@/types';
 
 const total = SIZE.MAX_HEIGHT;
 const layoutOffset = SIZE.MAIN_LAYOUT_BLOCK_MARGIN;
 const headerOffset = SIZE.HEADER_MIN_HEIGHT;
 
-const MiddleLayout: FC<Props> = ({ children }) => (
+const MiddleLayout: FC<Children> = ({ children }) => (
   <Flex
     direction='row'
     justify='space-between'

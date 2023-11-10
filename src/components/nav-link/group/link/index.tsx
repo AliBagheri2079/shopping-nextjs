@@ -23,7 +23,7 @@ export const GroupNavLink: FC<Props> = ({ label, href, icon, badge }) => {
         <Group justify='space-between'>
           <Text tt='capitalize'>{label}</Text>
           {badge ? (
-            <Badge size='sm' w={18} h={18} p={0}>
+            <Badge size='sm' variant='light' w={18} h={18} p={0}>
               {badge}
             </Badge>
           ) : null}
@@ -33,7 +33,9 @@ export const GroupNavLink: FC<Props> = ({ label, href, icon, badge }) => {
         size: 20,
         stroke: 2,
       })}
-      className={cx(classes.groupLink)}
+      classNames={{
+        root: cx(classes.groupLink),
+      }}
     />
   );
 };

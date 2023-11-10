@@ -1,0 +1,23 @@
+.carouselSlide {
+  cursor: pointer;
+  height: inherit;
+
+  &.active {
+    cursor: revert;
+    height: rem(300px);
+  }
+}
+
+.slideContent {
+  display: none;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media (min-width: $mantine-breakpoint-lg) {
+      width: rem(350px);
+    }
+  }
+}

@@ -8,4 +8,17 @@ module.exports = withBundleAnalyzer({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'fakestoreapi.com',
+        port: '',
+        pathname: '/img/**',
+      },
+    ],
+  },
+  experimental: {
+    serverActions: true,
+  },
 });

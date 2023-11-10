@@ -1,0 +1,8 @@
+.control {
+  border: unset;
+
+  &:not([data-active='true']) {
+    backdrop-filter: var(--mantine-blur-default);
+    background-color: var(--mantine-color-body);
+  }
+}

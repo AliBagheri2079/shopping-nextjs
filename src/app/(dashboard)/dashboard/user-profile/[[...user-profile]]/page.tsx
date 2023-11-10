@@ -6,6 +6,6 @@ export const metadata: Metadata = {
   title: 'User Profile Page | Elixir Online Shop',
 };
 
-export default function UserProfilePage() {
-  return <UserProfileCard />;
-}
+const UserProfilePage = () => <UserProfileCard />;
+
+export default UserProfilePage;

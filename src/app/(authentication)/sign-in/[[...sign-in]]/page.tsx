@@ -6,8 +6,7 @@ import { redirect } from 'next/navigation';
 export const metadata: Metadata = {
   title: 'SignIn Page | Elixir Online Shop',
 };
-
-export default function SignInPage() {
+const SignInPage = () => {
   const { userId } = auth();
 
   if (userId) redirect('/dashboard');
@@ -28,4 +27,6 @@ export default function SignInPage() {
       />
     </Flex>
   );
-}
+};
+
+export default SignInPage;

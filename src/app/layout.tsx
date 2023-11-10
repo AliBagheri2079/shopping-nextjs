@@ -1,15 +1,12 @@
 import { ColorSchemeScript } from '@mantine/core';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 import { poppins, sahel } from '@/assets/fonts';
-import Containers from '@/containers';
+import Providers from '@/lib/providers';
 import { layout_metadata } from '@/lib/utils';
+import { Children } from '@/types';
 
 export const metadata = layout_metadata;
-
-type Props = {
-  children: ReactNode;
-};
 
 /*
   NOTE: CHANGE PROJECT STRUCTURE TO JUST DASHBOARD PAGE WITHOUT HOME PAGE WITH SIGNUP/SIGNIN MODAL LIKE 'HAMED BAHRAM' CLERK VIDEO
@@ -23,8 +20,9 @@ type Props = {
   TODO: CHANGE BACKGROUND COLOR VARIABLE TO DARK LIGHT COLOR
   TODO: ADD CHILDREN FOR LOADING COMPONENT
   TODO: CHANGE CONTAINERS TO PROVIDERS
+  TODO: CONVERT TOGGLE COLOR SCHEME SWITCH TO FRAMER MOTION VERSION TO ENABLE TRANSITION
 */
-const RootLayout: FC<Props> = ({ children }) => {
+const RootLayout: FC<Children> = ({ children }) => {
   return (
     <html
       lang='en-US'
@@ -35,7 +33,7 @@ const RootLayout: FC<Props> = ({ children }) => {
         <ColorSchemeScript defaultColorScheme='auto' />
       </head>
       <body>
-        <Containers>{children}</Containers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

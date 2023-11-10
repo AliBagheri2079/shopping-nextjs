@@ -7,6 +7,7 @@ import cx from 'clsx';
 import { StarsSvg } from '../svg';
 import classes from './index.module.css';
 import { useColorScheme } from '@/hooks';
+import { GLASS_MORPHISM } from '@/lib/utils';
 
 export const ColorSchemeToggle = () => {
   const { toggleColorScheme } = useColorScheme();
@@ -27,9 +28,8 @@ export const ColorSchemeToggle = () => {
         offset={12}
         styles={{
           tooltip: {
+            ...GLASS_MORPHISM,
             color: 'var(--mantine-color-text)',
-            backgroundColor: 'var(--mantine-color-body)',
-            backdropFilter: 'blur(1.15rem)',
             fontSize: rem(8.5),
             fontWeight: 500,
           },

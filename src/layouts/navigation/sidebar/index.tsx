@@ -12,17 +12,17 @@ export const Sidebar = () => {
 
   const content = Object.entries(categorizedCollections).map(
     ([category, items]) => {
-      const rootId = randomId();
+      const groupId = randomId();
       return (
-        <Stack key={rootId} justify='space-between' gap='xs'>
+        <Stack key={groupId} justify='space-between' gap='xs'>
           <GroupCategory category={category} />
 
           <List listStyleType='none'>
             {items.map(item => {
-              const itemId = randomId();
+              const linkId = randomId();
               return (
                 <List.Item
-                  key={itemId}
+                  key={linkId}
                   styles={{
                     itemWrapper: {
                       display: 'revert',
