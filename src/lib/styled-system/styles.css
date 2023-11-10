@@ -1,0 +1,80 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@import url('./reset.css');
+@import url('./global.css');
+@import url('./tokens/index.css');
+@import url('./tokens/keyframes.css');
+
+@layer utilities {
+  .text_blue {
+    color: blue
+    }
+
+  .text_cyan {
+    color: cyan
+    }
+
+  .text_dark {
+    color: dark
+    }
+
+  .text_grape {
+    color: grape
+    }
+
+  .text_gray {
+    color: gray
+    }
+
+  .text_green {
+    color: green
+    }
+
+  .text_indigo {
+    color: indigo
+    }
+
+  .text_lime {
+    color: lime
+    }
+
+  .text_orange {
+    color: orange
+    }
+
+  .text_pink {
+    color: pink
+    }
+
+  .text_red {
+    color: red
+    }
+
+  .text_teal {
+    color: teal
+    }
+
+  .text_violet {
+    color: violet
+    }
+
+  .text_yellow {
+    color: yellow
+    }
+
+  .stroke_1\.5 {
+    stroke: 1.5px
+    }
+
+  .mt_100 {
+    margin-top: 100px
+    }
+
+  .mx_auto {
+    margin-inline: auto
+    }
+
+  .mt_xl {
+    margin-top: xl
+    }
+}

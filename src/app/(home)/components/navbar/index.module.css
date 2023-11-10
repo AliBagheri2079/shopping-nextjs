@@ -1,0 +1,5 @@
+.navbar {
+  inset-inline: 0;
+  padding-block: rem(20px);
+  position: absolute;
+}

@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shopping Next.js 
 
-## Getting Started
+This Layout made with Next.js, Mantine UI(with Tabler Icons and other depencies), TypeScript, Clerk Auth, Context Api, Spline, Framer motion, Clsx and Postcss with Plugins.
 
-First, run the development server:
+## [Demo Link](https://shopping-nextjs-temp.vercel.app/)
+
+<img
+src="./public/screenshots/1.png"
+style="max-width: 50px; max-height: 25px;"
+loading="lazy"
+alt="shopping home page screenshot"
+/>
+<img
+src="./public/screenshots/2.png"
+style="max-width: 50px; max-height: 25px;"
+loading="lazy"
+alt="shopping dashboard page screenshot"
+/>
+<img
+src="./public/screenshots/3.png"
+style="max-width: 50px; max-height: 25px;"
+loading="lazy"
+alt="shopping dashboard(dark mode) page screenshot"
+/>
+<img
+src="./public/screenshots/4.png"
+style="max-width: 50px; max-height: 25px;"
+loading="lazy"
+alt="shopping single product page screenshot"
+/>
+
+## Tech Stack
+
+**Config** Npm, Eslint, Prettier, Stylelint, Husky with Lint-staged, Git flow and Vercel
+
+## Features
+
+- 3D Spline For Home Page with Pandacss
+- Multiple Theme Colors
+- Switch Color Scheme
+- Custom Navigation for Mobile(Framer Motion) and Laptop 
+- Product Items with Pagination, Search, Change Category, Placeholder and Error Components
+- Single Product with Placeholder and Error Components
+- Support Shopping List Item
+- Many Reusable Hooks
+- Custom Not Found Page
+- Create User Auth with Clerk Auth, Next Auth with Supabase Auth
+- Create Global State Management with Context Api and Reduxjs Toolkit with RTK Query
+- Create Server State Management with React Query with Axios and Api Route
+- Create Form Validation with: React Hook Form with Zod and Mantine Form
+- Use Two Icon Libs: Tabler Icons and React Icons
+- Multile Types for Api and Components Pros
+- Many Utility Constants
+- Multiple Utility Helpers
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/AliBagheri2079/shopping-nextjs.git
+
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd crypto-react
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  npm run dev
+
+
+```
+
+Format the Component
+
+```bash
+  npm run format
+
+
+```
+
+linting the Component
+
+```bash
+  npm run lint
+
+
+```
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+
+
+```
+
+## 🚀 About Me
+
+I'm Ali Bagheri. Learning about 3 years on Frontend Development Position ...
+
+## 🔗 Links
+
+[![portfolio](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AliBagheri2079)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alibagheri2079/)
+
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AliBagheri2079)

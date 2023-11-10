@@ -1,0 +1,14 @@
+# Allowlist 'test.js' in the '.build' folder
+# But do not allow anything else in the '.build' folder to be linted
+!.build
+.build/*
+!.build/test.js
+
+# other folder and file
+**/vendor/*.js
+.history
+.husky
+.vscode
+coverage
+dist
+node_modules

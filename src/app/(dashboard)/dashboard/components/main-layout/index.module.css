@@ -1,0 +1,14 @@
+.defaultStyle {
+  backdrop-filter: var(--mantine-blur-default);
+  transition: all 300ms linear;
+}
+
+.contentPosition {
+  inset-inline: 0;
+  position: absolute;
+}
+
+.navbarPosition {
+  inset: auto 0 0;
+  position: fixed;
+}

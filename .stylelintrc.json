@@ -1,0 +1,24 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": ["width", "height"],
+    "order/properties-alphabetical-order": true,
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": null,
+    "max-nesting-depth": 2,
+    "selector-max-id": 1,
+    "selector-class-pattern": null,
+    "media-query-no-invalid": null,
+    "custom-property-pattern": null,
+    "no-duplicate-selectors": null,
+    "function-no-unknown": null
+  },
+  "overrides": [],
+  "reportNeedlessDisables": true,
+  "reportDescriptionlessDisables": true,
+  "reportInvalidScopeDisables": true,
+  "configurationComment": [],
+  "ignoreDisables": false
+}

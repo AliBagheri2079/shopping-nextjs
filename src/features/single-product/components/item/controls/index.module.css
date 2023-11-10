@@ -1,0 +1,40 @@
+/** Controls Style */
+.control {
+  align-items: center;
+  border-radius: 100vmax;
+  color: var(--mantine-primary-color-filled);
+  display: flex;
+  height: rem(38px);
+  justify-content: center;
+  transition: background-color 50ms ease;
+  width: rem(38px);
+
+  &:disabled {
+    color: var(--mantine-color-gray-filled);
+  }
+
+  @mixin hover {
+    background-color: var(--mantine-primary-color-light-hover);
+
+    &:disabled {
+      background-color: var(--mantine-color-gray-light);
+    }
+  }
+}
+
+/** Count Styles */
+.number {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.numberValue {
+  color: var(--mantine-color-text);
+  font-size: rem(44px);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: rem(5px);
+  text-align: center;
+}
